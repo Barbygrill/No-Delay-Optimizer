@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_21",
+  "package": "com.nodelay.nodelaymod.mixin",
+  "client": [
+    "MCInputHook"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

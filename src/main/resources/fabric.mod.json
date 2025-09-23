@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "nodelaymod",
+  "version": "v11-1.21",
+  "name": "NoDelayMod",
+  "description": "A lightweight client-side mod that makes crossbows and ender pearls feel more responsive on higher ping. It does not alter or add packets; the server still fully controls cooldowns.",
+  "environment": "client",
+  "contact": {
+    "homepage": "https://modrinth.com/mod/no-delay-mod",
+    "sources": "https://github.com/Barbygrill/No-Delay-Optimizer"
+  },
+  "mixins": [
+    "nodelaymod.mixins.json",
+    "nodelaymod.client.mixins.json"
+  ],
+  "entrypoints": {
+    "client": [
+      "com.nodelay.nodelaymod.Nodelaymod"
+    ],
+    "modmenu": [
+      "com.nodelay.nodelaymod.NoDelayModMenuIntegration"
+    ]
+  },
+  "authors": ["Barbygrill"],
+  "license": "MIT",
+  "icon": "assets/nodelaymod/icon.png",
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config2": "*"
+  }
+}
